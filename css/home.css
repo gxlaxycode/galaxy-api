@@ -1,0 +1,91 @@
+body {
+    background-image: url("../files/gradient.png");
+    cursor:url(cursor.png), auto;
+}
+
+
+.header {
+    transition: .5s;
+    overflow: hidden;
+    background-color:#182538;
+    padding: 10px 5px;
+    box-shadow: 2px 2px 2px #535FD7;
+    cursor:url(cursor.png), auto;
+}
+
+header, body{
+    background-color: #202D3F;
+    font-family: arial;
+    cursor:url(cursor.png), auto;
+}
+
+button{
+    background-color: #535FD7;
+    transition: .8s;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor:url(cursor.png), auto;
+}
+
+button:hover{
+    box-shadow: 2px 2px 30px #535FD7;
+    background-color: #535FD7;
+    color: white;
+    transition: .8s;
+    cursor:url(cursor.png), auto;
+    border-radius: 30px;
+}w
+
+.headerover{
+    transition: .5s;
+    box-shadow: 3px 3px 3px #535FD7;
+    cursor:url(cursor.png), auto;
+}
+
+.middle {
+    font-size: 30px;
+    text-align: center;
+    cursor:url(cursor.png), auto;
+}
+
+
+.link {
+    text-decoration: underline;
+    font-family: "SF Text Bold";
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-image: url("../files/link.png");
+    background-size: cover;
+    background-position: center;
+    cursor:url(cursor.png), auto;
+}
+
+.bold {
+    font-family: "SF Text Bold";
+    cursor:url(cursor.png), auto;
+}
+
+.title{
+    color: #535FD7;
+    text-align: center;
+    padding: 6px;
+    cursor:url(cursor.png), auto;
+}
+
+.footer {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("../files/gradient.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    cursor:url(cursor.png), auto;
+}

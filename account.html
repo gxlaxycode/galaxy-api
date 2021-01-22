@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Galaxy Server Account</title>
+        <link rel="icon" type="image/ico" href="files/favicon.png">
+        <link rel="stylesheet" href="css/account.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/account.js"></script>
+    </head>
+    <body onload="grabData()">
+        <div class="header">
+            <a class="bold">Galaxy</a>
+            <div class="header-right">
+                <a href="index.html"> <button class="button">home</button> </a>
+                <a href="download.html"> <button class="button">Download</button> </a>
+                <a href="/id/api/kill?redirect=true">Logout</a>
+                <a><a style="font-size: 18px;">User:</a> 
+                <a id="username" style="font-size: 18px;"></a></a>
+            </div>
+        </div>
+    
+        <div class="center">
+            <a style="font-size: 18px;">Account ID: </a>
+            <a id="accountid" style="font-size: 15px;"></a>
+            <br>
+            <br>
+            <form id="lobbyForm">
+                <a class="title" style="font-size: 40px;">Lobby</a>
+                <br>
+                <a class="title">V-Bucks</a><br>
+                <a class="description">Amount of V-Bucks. (Works Fine)</a><br>
+                <input type="number" id="vbucks" name="vbucks" placeholder="USER_ACCOUNT_VBUCKS"> 
+                <a class="title">Level</a><br>
+                <a class="description">Season and Battle Pass level. (Sometimes Doesnt Change)</a><br>
+                <input type="number" id="level" name="level" placeholder="USER_ACCOUNT_LEVEL">
+                </select>      
+                <a id="updated-account" class="title" style="font-size: 20px;"></a><br>
+                <button type="submit">Update</button>
+                <br>
+            <form id="giftForm">
+                <a class="title" style="font-size: 40px;">Gifting</a>
+                <br>
+                <a class="title">User</a><br>
+                <a class="description">Gift recievers's username.</a><br>
+                <input type="text" id="gift_username" name="gift_username" placeholder="Gxlaxy"> 
+                <a class="title">Gift Box</a><br>
+                <a class="description">Style of gift.</a><br>
+                <select id="giftbox" name="giftbox">
+                </select>                
+                <a class="title">Item</a><br>
+                <a class="description">Name of the item to gift.</a><br>
+                <input type="text" id="gift_item" name="gift_item" placeholder="Renegade Raider">                 
+                <a class="title">Message</a><br>
+                <a class="description">(Optional) Message that is given with the gift.</a><br>
+                <input type="text" id="gift_message" name="gift_message" placeholder="Hope you enjoy this gift; good luck, have fun!"> 
+                <a id="gift-notice" class="title" style="font-size: 20px;">Updated Account!</a><br>
+                <button type="giftsubmit">Gift</button>
+            </form>
+        </div>
+    </body>
+</html>
